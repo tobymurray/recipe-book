@@ -1,5 +1,4 @@
 export class Ingredient {
-    construtor(name: String, amount: number) {
-
+    constructor(name: String, amount: number) {
     }
 }
