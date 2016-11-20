@@ -16,4 +16,8 @@ export class RecipeService {
     return this.recipes;
   }
 
+  getRecipe(index: number) {
+    return this.recipes[index];
+  }
+
 }
