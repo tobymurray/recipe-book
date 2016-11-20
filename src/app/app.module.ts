@@ -1,3 +1,4 @@
+import { routing } from './app.routing';
 import { ShoppingListService } from './shopping-list/shopping-list.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -29,7 +30,8 @@ import { DropdownDirective } from './dropdown.directive';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    routing
   ],
   providers: [ShoppingListService],
   bootstrap: [AppComponent]
