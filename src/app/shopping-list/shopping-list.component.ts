@@ -20,4 +20,8 @@ export class ShoppingListComponent implements OnInit {
     this.selectedItem = ingredient;
   }
 
+  onCleared() {
+    this.selectedItem = null;
+  }
+
 }
