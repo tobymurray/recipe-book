@@ -8,11 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ShoppingListComponent implements OnInit {
   items: Ingredient[] = []; 
+  selectedItem: Ingredient = null;
 
   constructor(private shoppingListService: ShoppingListService) { }
 
   ngOnInit() {
     this.items = this.shoppingListService.getItems();
+  }
+
+  onSelectItem(ingredient: Ingredient) {
+    this.selectedItem = ingredient;
   }
 
 }
