@@ -1,3 +1,4 @@
+import { ShoppingListModule } from './shopping-list/shopping-list.module';
 import { routing } from './app.routing';
 import { ShoppingListService } from './shopping-list/shopping-list.service';
 import { BrowserModule } from '@angular/platform-browser';
@@ -25,18 +26,16 @@ import { RecipeStartComponent } from './recipes/recipe-start/recipe-start.compon
     RecipeListComponent,
     RecipeItemComponent,
     RecipeDetailComponent,
-    ShoppingListComponent,
-    ShoppingListAddComponent,
     DropdownDirective,
     RecipeEditComponent,
     RecipeStartComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule,
     HttpModule,
     routing,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    ShoppingListModule
   ],
   providers: [ShoppingListService],
   bootstrap: [AppComponent]
