@@ -88,7 +88,7 @@ export class RecipeEditComponent implements OnInit, OnDestroy {
               amount: new FormControl(this.recipe.ingredients[i].amount, [Validators.required, Validators.pattern("\\d+")]),
             })
           )
-        }I fi
+        }
       }
 
       recipeName = this.recipe.name;
